@@ -13,4 +13,4 @@ $ npm start
 And you're good to go!
 
 ## Access the app at:
-[ localhost:3000 ] (http://localhost:3000/)
+ [localhost:3000](http://localhost:3000/)
