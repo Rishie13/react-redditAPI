@@ -8,6 +8,7 @@ prerequisites: Node.js installed on local environment
 - navigate to cloned directory
 - type the following
 ```sh
+$ npm install -g
 $ npm start
 ```
 And you're good to go!
