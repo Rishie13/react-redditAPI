@@ -14,16 +14,17 @@
 
 div.gallery {
     border: 1px solid #ccc;
+    height: 400px;
+    width: 300px;
+    padding: 10px;
 }
 
 
 
 div.gallery img {
     width: 100%;
-    height: auto;
-    padding: 20px;
-    margin: auto;
-    display: block;
+    height: 100%;
+    padding: 10px;
 }
 
 
