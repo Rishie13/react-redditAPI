@@ -32,34 +32,31 @@ class Reddit extends Component {
 
 
 	render() {
-
+			console.log(this.state.perma); //test display permalinks
 		return (
-			<div>  
-
-			{ // loop through the array and display permalinks
-				//use of jsx means class becomes className, etc
-				this.state.perma.map((link, i) => { 
-					console.log(link); //test display permalinks
-					var permal = <div key={i}><a href={link}>{link}</a> <br/></div>;
-					return permal;
-				})
-			}
+			<div >
 
 			{
 				this.state.url.map((link, i) => {
-					console.log(link);
+					console.log(link); //test display urls
 					var urlz = 
 						<div className="responsive" key={i}> 
+						<a target="_blank" href={this.state.perma[i]}>
+						
 							<div className="gallery" >
-								<LazyLoad offsetVertical={300}>
+								<LazyLoad offsetVertical={250} height={300}>
 									<img src={link} alt="not an image" />
 								</LazyLoad>
-							</div>
+								<p>{this.state.title[i]}</p> 
+							</div> 
+							
+						</a>
+						
 						</div>;
 					return urlz;
 				})
 			}
-			</div> // images are lazy loaded and responsive to the window-size
+			</div>
 		);
 	}
 }
